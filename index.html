@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+<!--Page title-->
+<h1>
+    <div>Crystal Collector</div>
+    <div id="title"></div> 
+</h1>
+
+<!--Directions-->
+<h3>
+    <div>Instructions:</div>
+    <p>User must correctly click the crystals in a pattern so that the "number to guess" is reached! Each crystal has a different value. If the user can select the crystals to equal the magic number, we have a winner! If the user's score goes over the goal, we have a loser. </p>
+    <div id="instructions"></div>   
+</h3>
+
+<!--Where random number is stored-->
+<h3>
+    <div class = randNum>Number to guess:</div>
+    <div id="number-bank"></div>
+</h3>
+
+<!--Where wins and losses will be stored-->
+<h3>
+    <div>Wins:</div>
+    <div id="win-count"></div>
+    <br>
+    <div>Losses:</div>
+    <div id="loss-count"></div>
+</h3>
+
+<!--Where total score is stored-->
+<h3>
+    <div>Total Score:</div>
+    <div id="total-score"></div>
+</h3>
+
+<!--Crystals-->
+    <div>
+        <img id="crystal-image1" src="assets/images/crystal2.jpeg">
+    </div>
+    <div>
+        <img id="crystal-image2" src="assets/images/crystal1.jpeg">
+    </div>
+    <div>
+        <img id="crystal-image3" src="assets/images/crystal3.jpeg">
+    </div>
+    <div>
+        <img id="crystal-image4" src="assets/images/crystal4.jpeg">
+    </div>
+
+
+
+<script src="assets/javascript/game.js"></script>
+
+</body>
+</html>

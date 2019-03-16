@@ -1,0 +1,39 @@
+body {
+    background-color: white;
+  }
+  
+  h1 {
+    color: black;
+    text-align: center;
+  }
+  
+ h3 {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  p {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 15px;
+  }
+
+.randNum {
+    margin-top: 60px;
+}
+
+  #number-bank {
+      font-size: 60px;
+      padding: 10px;
+  }
+
+  #total-score {
+      font-size: 60px;
+      padding: 10px;
+  }
+
+  img {
+      height: 250px;
+      width: auto;
+      margin: 20px;
+      float: left;
+  }
