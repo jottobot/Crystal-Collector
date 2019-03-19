@@ -1,11 +1,15 @@
 body {
-    background-color: white;
+    background-color: lightskyblue;
   }
   
   h1 {
-    color: black;
+    color: darkviolet;
     text-align: center;
+    border-bottom: 6px solid pink;
+    margin-bottom: 40px;
+    font-size: 70px;
   }
+
   
  h3 {
     font-family: verdana;
@@ -14,22 +18,33 @@ body {
 
   p {
       font-family: 'Times New Roman', Times, serif;
-      font-size: 15px;
+      font-size: 17px;
+      color: white;
   }
 
 .randNum {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
   #number-bank {
       font-size: 60px;
       padding: 10px;
+      color: white;
   }
 
   #total-score {
       font-size: 60px;
       padding: 10px;
+      color: white;
   }
+
+#loss-count {
+  color: darkviolet;
+}
+
+#win-count {
+  color: darkviolet;
+}
 
   img {
       height: 250px;

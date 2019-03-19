@@ -1,61 +1,105 @@
 // Variables
-var randomNum = Math.floor((Math.random() * 101) + 19);
-    console.log(randomNum);
-    $("#number-bank").text(randomNum);
-var score = 0;
-    $("#total-score").text(score);
+var randomNum;
+var score;
+var wins = 0;
+$("#win-count").text(wins);
+var losses = 0;
+$("#loss-count").text(losses);
 var numOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 var crystalvalue1 = numOptions[Math.floor(Math.random() * numOptions.length)];
-    console.log(crystalvalue1);
+console.log(crystalvalue1);
 var crystalvalue2 = numOptions[Math.floor(Math.random() * numOptions.length)];
-    console.log(crystalvalue2);
+console.log(crystalvalue2);
 var crystalvalue3 = numOptions[Math.floor(Math.random() * numOptions.length)];
-    console.log(crystalvalue3);
+console.log(crystalvalue3);
 var crystalvalue4 = numOptions[Math.floor(Math.random() * numOptions.length)];
-    console.log(crystalvalue4);
+console.log(crystalvalue4);
+
+// Reseting game to new randomNum, score back to 0, but keeping wins/losses
+function reset() {
+        score = 0;
+        $("#total-score").text(score);
+        randomNum = Math.floor((Math.random() * 101) + 19);
+        $("#number-bank").text(randomNum);
+}
+reset();
 
 // Create on-click function for specific crystal picked to assign random value
-$("#crystal-image1").on("click", function() {
- 
+$("#crystal-image1").on("click", function () {
+
         score += crystalvalue1;
         alert("Your score is: " + score);
         $("#total-score").text(score);
-    
+
+        // Declaring win or lose 
+        if (score === randomNum) {
+                // wins++;
+                alert("Winner!");
+                reset();
+        } else if (score > randomNum) {
+                // losses++;
+                alert("Sorry, you lose!");
+                reset();
+
+        }
 });
 
 
-$("#crystal-image2").on("click", function() {
+$("#crystal-image2").on("click", function () {
 
         score += crystalvalue2;
         alert("Your score is: " + score);
         $("#total-score").text(score);
-    
+
+        if (score === randomNum) {
+                //  wins++;
+                alert("Winner!");
+                reset();
+        } else if (score > randomNum) {
+                //    losses++;
+                alert("Sorry, you lose!");
+                reset();
+
+        }
 });
 
-$("#crystal-image3").on("click", function() {
+$("#crystal-image3").on("click", function () {
 
         score += crystalvalue3;
         alert("Your score is: " + score);
         $("#total-score").text(score);
 
+        if (score === randomNum) {
+                //    wins++;
+                alert("Winner!");
+                reset();
+        } else if (score > randomNum) {
+                //   losses++;
+                alert("Sorry, you lose!");
+                reset();
+
+        }
 });
 
-$("#crystal-image4").on("click", function() {
+$("#crystal-image4").on("click", function () {
 
         score += crystalvalue4;
         alert("Your score is: " + score);
         $("#total-score").text(score);
-    
+
+        if (score === randomNum) {
+                //    wins++;
+                alert("Winner!");
+                reset();
+        } else if (score > randomNum) {
+                //  losses++;
+                alert("Sorry, you lose!");
+                reset();
+        }
 })
 
-// If score = randomNum then user wins, if score goes over user loses
-if ( $(score === randomNum)) {
-    alert("Winner!");
-} else if ($(score > randomNum)) {
-    alert("Sorry, you lose!");
-    console.log(score>randomNum)
-};
+
+
 
 // Add to wins and losses counter accordingly 
-// Game is over, reset all counters
-// Change randomNum when new game is started
+
