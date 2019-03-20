@@ -15,12 +15,13 @@ console.log(crystalvalue3);
 var crystalvalue4 = numOptions[Math.floor(Math.random() * numOptions.length)];
 console.log(crystalvalue4);
 
-// Reseting game to new randomNum, score back to 0, but keeping wins/losses
+// Reseting game to new randomNum, new crystal values and score back to 0, but keeping wins/losses
 function reset() {
         score = 0;
         $("#total-score").text(score);
         randomNum = Math.floor((Math.random() * 101) + 19);
         $("#number-bank").text(randomNum);
+        // Need to get crystals to reset to random value too
 }
 reset();
 
@@ -28,16 +29,18 @@ reset();
 $("#crystal-image1").on("click", function () {
 
         score += crystalvalue1;
-        alert("Your score is: " + score);
+        alert("Your new score is: " + score);
         $("#total-score").text(score);
 
         // Declaring win or lose 
         if (score === randomNum) {
-                // wins++;
+                wins++;
+                $("#win-count").text(wins);
                 alert("Winner!");
                 reset();
         } else if (score > randomNum) {
-                // losses++;
+                losses++;
+                $("#loss-count").text(losses);
                 alert("Sorry, you lose!");
                 reset();
 
@@ -48,15 +51,17 @@ $("#crystal-image1").on("click", function () {
 $("#crystal-image2").on("click", function () {
 
         score += crystalvalue2;
-        alert("Your score is: " + score);
+        alert("Your new score is: " + score);
         $("#total-score").text(score);
 
         if (score === randomNum) {
-                //  wins++;
+                wins++;
+                $("#win-count").text(wins);
                 alert("Winner!");
                 reset();
         } else if (score > randomNum) {
-                //    losses++;
+                losses++;
+                $("#loss-count").text(losses);
                 alert("Sorry, you lose!");
                 reset();
 
@@ -66,15 +71,17 @@ $("#crystal-image2").on("click", function () {
 $("#crystal-image3").on("click", function () {
 
         score += crystalvalue3;
-        alert("Your score is: " + score);
+        alert("Your new score is: " + score);
         $("#total-score").text(score);
 
         if (score === randomNum) {
-                //    wins++;
+                wins++;
+                $("#win-count").text(wins);
                 alert("Winner!");
                 reset();
         } else if (score > randomNum) {
-                //   losses++;
+                losses++;
+                $("#loss-count").text(losses);
                 alert("Sorry, you lose!");
                 reset();
 
@@ -84,22 +91,20 @@ $("#crystal-image3").on("click", function () {
 $("#crystal-image4").on("click", function () {
 
         score += crystalvalue4;
-        alert("Your score is: " + score);
+        alert("Your new score is: " + score);
         $("#total-score").text(score);
 
         if (score === randomNum) {
-                //    wins++;
+                wins++;
+                $("#win-count").text(wins);
                 alert("Winner!");
                 reset();
         } else if (score > randomNum) {
-                //  losses++;
+                losses++;
+                $("#loss-count").text(losses);
                 alert("Sorry, you lose!");
                 reset();
         }
 })
 
-
-
-
-// Add to wins and losses counter accordingly 
 
