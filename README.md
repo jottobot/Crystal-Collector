@@ -1,6 +1,6 @@
 # Crystal Collector
 
-Technologies used: HTML, CSS, jQuery
+Technologies used: Bootstrap, HTML, CSS, JavaScript, jQuery
 
 ## About 
 
