@@ -14,50 +14,68 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <div class="jumbotron">
-        <h1 class="display-4">Crystal Collector</h1>
-        <p class="lead">Instructions:</p>
-        <hr class="my-4">
-        <p>User must correctly click the crystals in a pattern so that the "number to guess" is reached! Each crystal has a different value. If the user can select the crystals to equal the magic number, we have a winner! If the user's score goes over the goal, we have a loser.</p>
+        <div class="jumbotron">
+            <h1>Crystal Collector</h1>
+            <p class="lead">Instructions:</p>
+            <hr>
+            <p>User must correctly click the crystals in a pattern so that the "number to guess" is reached! Each
+                crystal has a different value. If the user can select the crystals to equal the magic number, we have a
+                winner! If the user's score goes over the goal, we have a loser.</p>
+        </div>
+
+        <!-- wins, losses, goal number-->
+        <div class="row">
+            <div class="col-4">
+                <h3>
+                    <div class="title">Wins:</div>
+                    <div id="win-count"></div>
+                </h3>
+            </div>
+            <div class="col-4">
+                <h3>
+                    <div class="randNum">Number to guess:</div>
+                    <div id="number-bank"></div>
+
+                </h3>
+            </div>
+            <div class="col-4">
+                <h3>
+                    <div class="title">Losses:</div>
+                    <div id="loss-count"></div>
+                </h3>
+            </div>
+        </div>
+      
+   
+
+    <!-- where total score is stored-->
+    <div>
+        <h3>
+            <div class="title">Total Score:</div>
+            <div id="total-score"></div>
+        </h3>
     </div>
 
-    <!--Where random number is stored-->
-    <h3>
-        <div class="randNum">Number to guess:</div>
-        <div id="number-bank"></div>
-    </h3>
+    <!-- crystal pics -->
+    <div class="row" id="crystalimages">
+        <div>
+            <img id="crystal-image1" class="img" src="assets/images/crystal2.jpeg">
+        </div>
+        <div class="title">
+            <img id="crystal-image2" class="img" src="assets/images/crystal1.jpeg">
+        </div>
+        <div class="title">
+            <img id="crystal-image3" class="img" src="assets/images/crystal3.jpeg">
+        </div>
+        <div class="title">
+            <img id="crystal-image4" class="img" src="assets/images/crystal4.jpeg">
+        </div>
+    </div>
+    </div>
 
-    <!--Where wins and losses will be stored-->
-    <h3>
-        <div class="title">Wins:</div>
-        <div id="win-count"></div>
-        <br>
-        <div class="title">Losses:</div>
-        <div id="loss-count"></div>
-    </h3>
 
-    <!--Where total score is stored-->
-    <h3>
-        <div class="title">Total Score:</div>
-        <div id="total-score"></div>
-    </h3>
-
-    <!--Crystals-->
-  <div>
-        <img id="crystal-image1" class="img" src="assets/images/crystal2.jpeg">
-    </div>
-    <div class="title">
-        <img id="crystal-image2" class="img" src="assets/images/crystal1.jpeg">
-    </div>
-    <div class="title">
-        <img id="crystal-image3" class="img" src="assets/images/crystal3.jpeg">
-    </div>
-    <div class="title">
-        <img id="crystal-image4" class="img" src="assets/images/crystal4.jpeg">
-    </div>
-</div>
 
 
 

@@ -47,12 +47,10 @@ $("#crystal-image1").on("click", function () {
         if (score === randomNum) {
                 wins++;
                 $("#win-count").text(wins);
-                alert("Winner!");
                 reset();
         } else if (score > randomNum) {
                 losses++;
                 $("#loss-count").text(losses);
-                alert("Sorry, you lose!");
                 reset();
 
         }
@@ -69,12 +67,10 @@ $("#crystal-image2").on("click", function () {
         if (score === randomNum) {
                 wins++;
                 $("#win-count").text(wins);
-                alert("Winner!");
                 reset();
         } else if (score > randomNum) {
                 losses++;
                 $("#loss-count").text(losses);
-                alert("Sorry, you lose!");
                 reset();
         }
 
@@ -89,12 +85,10 @@ $("#crystal-image3").on("click", function () {
         if (score === randomNum) {
                 wins++;
                 $("#win-count").text(wins);
-                alert("Winner!");
                 reset();
         } else if (score > randomNum) {
                 losses++;
                 $("#loss-count").text(losses);
-                alert("Sorry, you lose!");
                 reset();
         }
 
@@ -109,12 +103,10 @@ $("#crystal-image4").on("click", function () {
         if (score === randomNum) {
                 wins++;
                 $("#win-count").text(wins);
-                alert("Winner!");
                 reset();
         } else if (score > randomNum) {
                 losses++;
                 $("#loss-count").text(losses);
-                alert("Sorry, you lose!");
                 reset();
         }
 

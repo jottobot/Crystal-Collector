@@ -5,7 +5,6 @@
 h1 {
     color: darkviolet;
     text-align: center;
-    border-bottom: 6px solid pink;
     margin-bottom: 40px;
     font-size: 70px;
   }
@@ -13,16 +12,10 @@ h1 {
 .lead {
     font-family: verdana;
     font-size: 20px;
-  }
-
-  .my-4 {
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 17px;
-      color: black;
+    font-weight: bold;
   }
 
 .randNum {
-    margin-top: 40px;
     text-align: center;
 }
 
@@ -55,13 +48,10 @@ h1 {
   text-align: center;
 }
 
+#crystalimages {
+  margin: 0 auto;
+}
+
 .img {
-  position: relative;
-  float: left;
-  width:  250px;
-  height: 250px;
-  background-position: 50% 50%;
-  background-repeat:   no-repeat;
-  background-size:     cover;
   margin-right: 20px;
 }
